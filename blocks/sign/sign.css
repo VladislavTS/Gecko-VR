@@ -1,0 +1,175 @@
+.sign-block{
+	width: 100%;
+	max-width: 320px;
+
+	margin: 50px auto;
+	padding: 25px;
+}
+
+
+
+.form-block{
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+.form-block .form-block__title{
+	width: 100%;
+	height: auto;
+
+	font-size: 22px;
+	font-weight: 400;
+
+	margin: 5px 0;
+	padding: 0 15px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+	.form-block .form-block__title .href{
+		color: #ff403b;
+	}
+		/* hover */
+		.form-block .form-block__title .href:hover{
+			border-bottom: 1px solid #ff403b;
+		}
+
+
+
+
+.form-block .href{
+	font-size: 16px;
+
+	transition: 0.25s;
+	border-bottom: 1px solid transparent;
+}
+	/* hover */
+	.form-block .href:hover{
+		border-bottom: 1px solid #242424;
+	}
+
+
+
+
+.form-block__input{
+	width: 100%;
+	height: 30px;
+
+	font-size: 16px;
+	font-weight: 400;
+
+	margin: 5px 0;
+	padding: 0 15px;
+
+	border-bottom: 1px solid #242424;
+}
+
+
+
+.form-block [button="send"]{
+	width: 125px;
+	height: 30px;
+
+	font-size: 16px;
+	color: #fff;
+
+	margin: 15px 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: 0.2s;
+
+	opacity: 0.75;
+	cursor: pointer;
+	box-shadow: 0 0 5px 0 rgba(0,0,0, 0.075);
+	background: #ff403b;
+}
+	/* hover */
+	.form-block [button="send"]:hover{
+		opacity: 1;
+	}
+
+
+
+/*
+
+.sign-form {
+	padding: 25px;
+	margin: 50px auto 0;
+	background: #fff;
+	border-radius: 5px;
+	width: 320px;
+}
+
+.sign-form__text-article,
+.sign-form__text-password {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.sign-form__text-forg_password {
+	color: #ff403b;
+	display: inline-block;
+	float: right;
+	line-height: 1.6;
+}
+
+.sign-form__text-password {
+	float: left;
+}
+
+.sign-form__input-login, 
+.sign-form__input-password {
+	background: #f2f2f2;
+	padding: 6px 0;
+	margin: 0 0 8px 0;
+	text-indent: 5px;
+	width: 100%;
+}
+
+.registre_disactive {
+	display: none;
+}
+
+[button="send"] {
+	color: #fff;
+	width: 70px;
+	text-align: center;
+	padding: 5px;
+	margin: 10px auto 0;
+	cursor: pointer;
+	border-radius: 2px;
+	border-bottom: 1px solid transparent;
+	background: #ff403b;
+}
+
+[button="registre"] {
+	text-align: center;
+	margin: 10px auto 0 auto;
+	cursor: pointer;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+*/

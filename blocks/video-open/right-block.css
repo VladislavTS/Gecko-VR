@@ -1,0 +1,29 @@
+[page="video-open"] .horizontal-video{
+	width: 100%;
+	height: auto;
+
+	margin-bottom: 15px;
+}
+
+
+
+[page="video-open"] .horizontal-video .video-block__img-container{
+	width: 100%;
+	margin-right: 15px;
+
+	background: #d1d1d1;
+}
+
+
+
+[page="video-open"] .video-block__info{
+	width: 100%;
+	height: auto;
+}
+
+	[page="video-open"] .video-info__title{
+		font-size: 16px;
+		font-weight: 400;
+
+		margin: 5px 0;
+	}

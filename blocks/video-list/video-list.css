@@ -1,0 +1,168 @@
+.video-list{
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin: 15px 0;
+	position: relative;
+}
+
+.video-list .video-block{
+	width: calc(33.35% - 5px);
+	margin: 0 0 5px 0;
+}
+	/* hover */
+	.video-list .video-block:hover{
+		box-shadow: 0 0 10px 0 rgba(0,0,0, 0.2);
+	}
+
+	[page="video-open"] .video-block__preloader{
+		width: 100%;
+	}
+
+	.video-list .video-block__img-container{
+		width: 100%;
+		height: 100%;
+
+		position: relative;
+
+		overflow: hidden;
+	}
+		.video-list .img-container__img{
+			width: 100%;
+			height: auto;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			margin: auto;
+			transition: 0.25s;
+		}
+			/* hover */
+			.video-list .video-block:hover .img-container__img{
+				width: 115%;
+			}
+
+	.video-list .video-block__info-container{
+		max-width: calc(100% - 10px);
+
+		font-size: 14px;
+
+		position: relative;
+		padding: 15px 25px 15px 15px;
+
+		display: flex;
+		align-items: center;
+	}
+
+		.author-label{
+			width: 35px;
+			height: 35px;
+
+			margin-right: 15px;
+
+			position: relative;
+			z-index: 5;
+
+			border-radius: 50%;
+			border: 3px solid #d1d1d1;
+		}
+
+		.video-list .video-block__info{
+			position: relative;
+			z-index: 5;
+		}
+
+		.video-list .video-block__title{
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		.video-list .video-block__author{
+			font-size: 14px;
+			margin-bottom: 5px;
+		}
+
+		.video-list .video-block__type{
+			margin-right: 15px;
+		}
+
+		.video-list .video-block__views::after{
+			width: 10px;
+			height: 10px;
+			content: "";
+
+			font-size: 14px;
+
+			display: inline-block;
+			margin-left: 5px;
+
+			background: url("/gec-content/img/eye.svg")  no-repeat center center;
+			background-size: 100% 100%;
+		}
+
+
+
+	.video-labels{
+		width: 100%;
+		height: 30px;
+
+		padding: 5px;
+
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		position: relative;
+		z-index: 5;
+	}
+
+		.video-labels__time{
+			width: auto;
+			height: 100%;
+
+			margin-left: 5px;
+			padding: 0 5px;
+
+			display: flex;
+			margin: auto 0 auto 5px;
+
+			background: #242424;
+		}
+
+			.label__title{
+				font-size: 14px;
+				color: #fff;
+			}
+
+
+
+[button="more-videos"]{
+	width: 125px;
+	height: 30px;
+
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: lowercase;
+	text-align: center;
+
+	margin: 0 auto;
+	padding: 5px 15px;
+
+	display: block;
+	transition: 0.2s;
+
+	opacity: 0.75;
+	cursor: pointer;
+	border-radius: 15px;
+	background: #d1d1d1;
+}
+	[button="more-videos"]:hover{
+		opacity: 1;
+	}
